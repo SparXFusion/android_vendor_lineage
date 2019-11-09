@@ -138,23 +138,22 @@ PRODUCT_PACKAGES += \
 
 # Optional packages
 PRODUCT_PACKAGES += \
-    LiveWallpapersPicker \
-    PhotoTable \
     Terminal
 
 # Custom Lineage packages
 PRODUCT_PACKAGES += \
-    AudioFX \
     Backgrounds \
     LineageSettingsProvider \
     LineageSetupWizard \
     Eleven \
     ExactCalculator \
-    Jelly \
+    Browser \
     LockClock \
-    TrebuchetQuickStep \
     Updater \
-    WeatherProvider
+    Music \
+    privapp-permissions-crdroidhome.xml \
+    AdAway \
+    crDroidHome
 
 # Exchange support
 PRODUCT_PACKAGES += \
@@ -262,8 +261,8 @@ PRODUCT_VERSION_MINOR = 0
 # Define the version release
 OPTIMIZED_VERSION := V2.0
 
-LINEAGE_VERSION := Optimized-LineageOS-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date +%Y%m%d)-$(LINEAGE_BUILD)-v$(OPTIMIZED_VERSION)
-LINEAGE_DISPLAY_VERSION := Optimized-LineageOS-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(LINEAGE_BUILD)-v$(OPTIMIZED_VERSION)
+OPTIMIZED_LINEAGE_VERSION := Optimized-LineageOS-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(LINEAGE_BUILD)-v$(OPTIMIZED_VERSION)
+OPTIMIZED_LINEAGE_DISPLAY_VERSION := Optimized-LineageOS-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(LINEAGE_BUILD)-v$(OPTIMIZED_VERSION)
 
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/lineage/build/target/product/security/lineage
